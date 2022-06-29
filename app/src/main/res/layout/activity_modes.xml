@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".Modes">
+
+    <TextView
+        android:id="@+id/txtChooseGameMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"
+        android:text="Choose Game Mode"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btnDayMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/roundedbtn"
+        android:backgroundTint="@color/white"
+        android:text="Day Mode"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnNightMode"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDayMode"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedbtn"
+        android:backgroundTint="@color/black"
+        android:text="Night Mode"
+        android:textColorHint="@color/black" />
+
+
+
+</RelativeLayout>

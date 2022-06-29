@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nightbackground"
+    tools:context=".Night">
+
+    <com.example.flappybird.NightGameView
+        android:id="@+id/Ngv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/logo"
+        android:textAlignment="center"
+        android:textColor="#ff00" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Score : 0"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="150dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/roundedbtn"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Play"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/PanelGameOver"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txtGameOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/gameover"
+            android:textAlignment="center"
+            android:textColor="#ff00"
+
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/txtScoreOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:text="Score : 0"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txtTopScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtScoreOver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Top Score : 0"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTopScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:text="Tap to continue"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
